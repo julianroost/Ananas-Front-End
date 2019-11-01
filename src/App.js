@@ -3,6 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Nav from "./Components/Nav";
 import Feet from "./Components/Feet";
+import Home from "./Components/Home";
 import History from "./Components/History";
 
 function App() {
@@ -12,12 +13,7 @@ function App() {
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Hello, I'm from the Main Page!</h1>
-            <p>
-              Aliquip aliquip ullamco deserunt quis nostrud ea amet mollit nisi.
-              Enim nisi sint culpa amet aute Lorem id cillum dolor excepteur
-              aliqua aliquip exercitation. Et elit culpa id est veniam ad.
-            </p>
+            <Home />
             <History />
           </div>
         </div>
