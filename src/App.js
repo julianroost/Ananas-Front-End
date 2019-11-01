@@ -3,7 +3,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Nav from "./Components/Nav";
 import Feet from "./Components/Feet";
+import Home from "./Components/Home";
 import History from "./Components/History";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -28,9 +30,9 @@ function App() {
             <History />
           </div>
         </div>
-      </div>
-      <Feet />
-    </view>
+        <Feet />
+      </view>
+    </Router>
   );
 }
 
