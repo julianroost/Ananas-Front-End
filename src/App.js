@@ -5,21 +5,24 @@ import Nav from "./Components/Nav";
 import Feet from "./Components/Feet";
 import Home from "./Components/Home";
 import History from "./Components/History";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <view style={{ fles: 1 }}>
-      <Nav />
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <Home />
-            <History />
+    <Router>
+      <view style={{ fles: 1 }}>
+        <Nav />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <Route path="/home" component={Home} />
+              <Route path="/history" component={History} />
+            </div>
           </div>
         </div>
-      </div>
-      <Feet />
-    </view>
+        <Feet />
+      </view>
+    </Router>
   );
 }
 
